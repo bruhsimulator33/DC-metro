@@ -5,6 +5,9 @@ import pandas as pd
 # print(june15)
 # summeravg= pd.merge(june5,june15,on='Station Name')
 # print(summeravg)
-
-summer=pd.read_csv('tabsep.csv', delimiter="\t", encoding='utf16')
-print(summer)
+june5=pd.read_csv('june5_2024updated.csv', delimiter="\t", encoding='utf16')
+print(june5)
+june15=pd.read_csv('june15_2024_updated.csv', delimiter="\t", encoding='utf16')
+print(june15)
+summeravg=pd.read_csv('tabsep.csv', delimiter="\t", encoding='utf16')
+print(summeravg)
