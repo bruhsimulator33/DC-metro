@@ -15,9 +15,17 @@ june15=pd.read_csv('june15_2024_updated.csv', delimiter="\t", encoding='utf16')
 
 print(june15)
 
-june4=pd.read_csv('fourthofjuly.csv', delimiter="\t", encoding='utf16')
+fourthjuly=pd.read_csv('July_04_2024.csv', delimiter="\t", encoding='utf16')
 
-print(june15)
+print(fourthjuly)
+
+fathersday=pd.read_csv('June_16_2024.csv', delimiter="\t", encoding='utf16')
+
+print(fathersday)
+
+juneteenth=pd.read_csv('June_19_2024.csv', delimiter="\t", encoding='utf16')
+
+print(juneteenth)
 
 summeravg=pd.read_csv('tabsep.csv', delimiter="\t", encoding='utf16')
 
