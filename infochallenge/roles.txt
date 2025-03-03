@@ -2,7 +2,7 @@ Pedro Castellon, Braxton Woodson, Justice MacDonnell: DC Metro
 Git Hub Repo: https://github.com/bruhsimulator33/DC-metro 
 
 Jobs:
-Pedro: Create visualizations (pie charts, scatter plots, bar graphs)
+Pedro: Create visualizations (pie charts, scatter plots, bar graphs) / set up repo
 Justice: Location and stop analysis (why are the stops so popular or empty?) (slideshow)
 Braxton: Select the data (summer dates) and convert to useable file (csv)
 
