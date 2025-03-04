@@ -28,6 +28,6 @@ print(juneteenth)
 summer=pd.read_csv('allsummer.csv', delimiter="\t", encoding='utf16')
 summer["summer average"]= pd.to_numeric(summer["AM Peak (Open-9:30am)"]) + pd.to_numeric(summer["Midday (9:30am-3pm)"]) + pd.to_numeric(summer["PM Peak (3pm-7pm)"]) + pd.to_numeric(summer["Evening (7pm-12am)"]) + pd.to_numeric(summer["Late Night (12am-Close)"])
 print(summer)
-#already has average daily entries
+#already has average daily entries we just need to make graphs
 
 # px.histogram(summeravg, x='Station Name', y='Ridership', nbins=24, width=1000, height=600)
