@@ -31,6 +31,16 @@ juneteenth["total"]= pd.to_numeric(juneteenth["AM Peak (Open-9:30am)"]) + pd.to_
 sortedjuneteenth=juneteenth.sort_values('total')
 print(sortedjuneteenth)
 
+OliviaRodrigo=pd.read_csv('July_20_2024.csv', delimiter="\t", encoding='utf16')
+OliviaRodrigo["total"]= pd.to_numeric(OliviaRodrigo["AM Peak (Open-9:30am)"]) + pd.to_numeric(OliviaRodrigo["Midday (9:30am-3pm)"]) + pd.to_numeric(OliviaRodrigo["PM Peak (3pm-7pm)"]) + pd.to_numeric(OliviaRodrigo["Evening (7pm-12am)"]) + pd.to_numeric(OliviaRodrigo["Late Night (12am-Close)"])
+sortedOliviaRodrigo=OliviaRodrigo.sort_values('total')
+print(sortedOliviaRodrigo)
+
+LukeCombs=pd.read_csv('July_27_2024.csv', delimiter="\t", encoding='utf16')
+LukeCombs["total"]= pd.to_numeric(LukeCombs["AM Peak (Open-9:30am)"]) + pd.to_numeric(LukeCombs["Midday (9:30am-3pm)"]) + pd.to_numeric(LukeCombs["PM Peak (3pm-7pm)"]) + pd.to_numeric(LukeCombs["Evening (7pm-12am)"]) + pd.to_numeric(LukeCombs["Late Night (12am-Close)"])
+sortedLukeCombs=LukeCombs.sort_values('total')
+print(sortedLukeCombs)
+
 summer=pd.read_csv('allsummer.csv', delimiter="\t", encoding='utf16')
 summer["summer average"]= pd.to_numeric(summer["AM Peak (Open-9:30am)"]) + pd.to_numeric(summer["Midday (9:30am-3pm)"]) + pd.to_numeric(summer["PM Peak (3pm-7pm)"]) + pd.to_numeric(summer["Evening (7pm-12am)"]) + pd.to_numeric(summer["Late Night (12am-Close)"])
 sortedsummer=summer.sort_values('summer average')
